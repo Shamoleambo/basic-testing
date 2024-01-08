@@ -18,3 +18,9 @@ it('should yield the correct answer from a numeric string array', () => {
   const result = add(addArgs)
   expect(result).toBe(3)
 })
+
+it('should return 0 if the array is empty', () => {
+  const addArgs = []
+  const result = add(addArgs)
+  expect(result).toBe(0)
+})

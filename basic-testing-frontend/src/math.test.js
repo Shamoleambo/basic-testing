@@ -32,3 +32,13 @@ it('should throw an error if no values are provided to the function', () => {
 
   expect(resultFn).toThrow()
 })
+
+it('should throw an error if add is provided with more than one argument that are not a single array', () => {
+  const num1 = 1
+  const num2 = 2
+  const resultFn = () => {
+    add(num1, num2)
+  }
+
+  expect(resultFn).toThrow()
+})

@@ -24,3 +24,11 @@ it('should return 0 if the array is empty', () => {
   const result = add(addArgs)
   expect(result).toBe(0)
 })
+
+it('should throw an error if no values are provided to the function', () => {
+  const resultFn = () => {
+    add()
+  }
+
+  expect(resultFn).toThrow()
+})
